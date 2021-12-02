@@ -1,6 +1,6 @@
 ﻿
 
-string inputPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\git\\AOC-2021\\C#\\1\\input.txt";
+string inputPath = Environment.GetFolderPath(Environment.SpecialFolder.UserProfile) + "\\git\\AOC-2021\\C#\\1\\Day1\\input.txt";
 string[] fileText = System.IO.File.ReadAllLines(inputPath);
 
 
