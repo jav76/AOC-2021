@@ -36,9 +36,8 @@ def part2(input):
     oxygenRating = copy.deepcopy(input)
     CO2Rating = copy.deepcopy(input)
     n = 0
-    bits = commonBits(input)
-    print(bits)
     while len(oxygenRating) > 1:
+        bits = commonBits(oxygenRating)
         for i in oxygenRating[:]:
             bit = 0
             if bits[n] >= 0.5:
@@ -51,6 +50,7 @@ def part2(input):
         print(oxygenRating)
     n = 0
     while len(CO2Rating) > 1:
+        bits = commonBits(CO2Rating)
         for i in CO2Rating[:]:
             bit = 1
             if bits[n] >= 0.5:
@@ -63,7 +63,8 @@ def part2(input):
         print(CO2Rating)
     oxygenRating = oxygenRating[0]
     CO2Rating = CO2Rating[0]
-
+    print(int(oxygenRating, 2))
+    print(int(CO2Rating, 2))
     lifeRating = int(oxygenRating, 2) * int(CO2Rating, 2)
     return lifeRating
 
