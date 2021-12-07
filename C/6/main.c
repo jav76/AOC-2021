@@ -33,16 +33,6 @@ int main()
         fish[6] += newFish;
     }
 
-
-
-
-
-
-
-
-
-
-
     uint128_t totalFish = 0;
     for (int i = 0; i < 8; i++)
     {
